@@ -1,0 +1,19 @@
+{
+    "name": "livy/plumbing-responsive-images",
+    "description": "Wrapper to help with generating responsive images for WordPress.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Martinez-Bateman",
+            "email": "ben@alwaysblank.org"
+        }
+    ],
+    "require": {
+        "php": "~7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\Livy\\Plumbing\\ResponsiveImages\\": "src/"
+        }
+    }
+}

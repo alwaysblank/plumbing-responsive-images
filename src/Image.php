@@ -136,7 +136,10 @@ class Image
     public function src(): ?string
     {
         if ($this->valid) {
-            return wp_get_attachment_image_src($this->post->ID, $this->size) ?: null;
+            $src = wp_get_attachment_image_src($this->post->ID, $this->size) ?: null;
+            if (is_array($src)) {
+                return $src[0];
+            }
         }
 
         return null;

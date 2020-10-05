@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "\\Livy\\Plumbing\\ResponsiveImages\\": "src/"
+            "Livy\\Plumbing\\ResponsiveImages\\": "src/"
         }
     }
 }

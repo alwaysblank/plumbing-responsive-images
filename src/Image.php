@@ -47,7 +47,7 @@ class Image
             $this->valid = ($this->post->post_type === 'attachment')
                            && (0 === strpos($this->post->post_mime_type, 'image'));
             if ($this->valid) {
-                $this->metadata = $this->dot(wp_get_attachment_metadata($this->post));
+                $this->metadata = $this->dot(wp_get_attachment_metadata($this->post->ID));
             }
         }
     }
